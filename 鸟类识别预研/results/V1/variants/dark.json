@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "width": 1280,
+    "height": 720,
+    "fps": 29.97,
+    "frames": 300,
+    "duration_s": 10.01
+  },
+  "source": "D:\\作业\\软工\\data\\videos\\variants\\V1_feeder_slovakia_dark.mp4",
+  "device_info": {
+    "hostname": "HesirLaptop",
+    "os": "Windows 11",
+    "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+    "cpu_cores_physical": 24,
+    "ram_gb": 63.4,
+    "python": "3.13.9",
+    "torch": "2.14.1+cpu",
+    "torch_threads": 8,
+    "torch_cuda_available": false,
+    "gpu": null,
+    "cv2": "5.0.0",
+    "ultralytics": "8.4.183",
+    "numpy": "2.5.2"
+  },
+  "config": {
+    "model": "d:\\作业\\软工\\models\\yolo11n.pt",
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.5,
+    "classes": "14",
+    "tracker": "bytetrack",
+    "cls_model": "none",
+    "topk": 5,
+    "device_arg": "cpu",
+    "loops": 1,
+    "warmup": 5
+  },
+  "run": {
+    "frames_processed": 300,
+    "frames_in_stats": 295,
+    "wall_s": 9.5,
+    "fps_processed": 31.58,
+    "source_fps": 29.97,
+    "realtime_factor": 1.054
+  },
+  "detections": {
+    "total": 174,
+    "frames_with_bird": 174,
+    "frame_hit_rate": 0.58,
+    "mean_per_frame": 0.58,
+    "box_side_px": {
+      "n": 174,
+      "mean": 160.01,
+      "p50": 147.59,
+      "p95": 304.6,
+      "p99": 361.04,
+      "min": 98.97,
+      "max": 363.03
+    },
+    "box_side_bins": {
+      "<32": 0,
+      "32-64": 0,
+      "64-128": 40,
+      ">=128": 134
+    }
+  },
+  "tracking": {
+    "unique_ids": 6,
+    "tracks_ge_5_frames": 4,
+    "tracks_ge_30_frames": 3,
+    "id_assignment_rate": 1.0,
+    "per_track": [
+      {
+        "track_id": 26,
+        "frames_seen": 94,
+        "first_frame": 206,
+        "last_frame": 299,
+        "mean_conf": 0.638,
+        "span_frames": 94
+      },
+      {
+        "track_id": 1,
+        "frames_seen": 34,
+        "first_frame": 7,
+        "last_frame": 94,
+        "mean_conf": 0.617,
+        "span_frames": 88
+      },
+      {
+        "track_id": 19,
+        "frames_seen": 31,
+        "first_frame": 130,
+        "last_frame": 192,
+        "mean_conf": 0.678,
+        "span_frames": 63
+      },
+      {
+        "track_id": 20,
+        "frames_seen": 12,
+        "first_frame": 164,
+        "last_frame": 175,
+        "mean_conf": 0.646,
+        "span_frames": 12
+      },
+      {
+        "track_id": 17,
+        "frames_seen": 2,
+        "first_frame": 125,
+        "last_frame": 126,
+        "mean_conf": 0.364,
+        "span_frames": 2
+      },
+      {
+        "track_id": 8,
+        "frames_seen": 1,
+        "first_frame": 33,
+        "last_frame": 33,
+        "mean_conf": 0.335,
+        "span_frames": 1
+      }
+    ]
+  },
+  "species": {
+    "enabled": false,
+    "model": "none",
+    "skipped_small_crops": 0,
+    "top1_histogram": {}
+  },
+  "latency_ms": {
+    "e2e_ms": {
+      "n": 295,
+      "mean": 25.0,
+      "p50": 24.49,
+      "p95": 29.12,
+      "p99": 32.13,
+      "min": 20.99,
+      "max": 44.43
+    },
+    "infer_wall_ms": {
+      "n": 295,
+      "mean": 20.8,
+      "p50": 20.55,
+      "p95": 24.22,
+      "p99": 26.0,
+      "min": 17.28,
+      "max": 28.18
+    },
+    "model_inference_ms": {
+      "n": 295,
+      "mean": 18.56,
+      "p50": 18.34,
+      "p95": 22.01,
+      "p99": 23.45,
+      "min": 14.74,
+      "max": 25.61
+    },
+    "model_postprocess_ms": {
+      "n": 295,
+      "mean": 0.56,
+      "p50": 0.56,
+      "p95": 0.83,
+      "p99": 1.17,
+      "min": 0.35,
+      "max": 1.68
+    },
+    "model_preprocess_ms": {
+      "n": 295,
+      "mean": 0.75,
+      "p50": 0.7,
+      "p95": 1.02,
+      "p99": 1.34,
+      "min": 0.6,
+      "max": 1.57
+    },
+    "proc_ms": {
+      "n": 295,
+      "mean": 23.44,
+      "p50": 22.96,
+      "p95": 27.73,
+      "p99": 30.47,
+      "min": 19.36,
+      "max": 42.67
+    },
+    "read_ms": {
+      "n": 295,
+      "mean": 1.56,
+      "p50": 1.52,
+      "p95": 2.06,
+      "p99": 2.43,
+      "min": 1.02,
+      "max": 2.62
+    },
+    "species_ms": {
+      "n": 295,
+      "mean": 0.04,
+      "p50": 0.04,
+      "p95": 0.07,
+      "p99": 0.09,
+      "min": 0.01,
+      "max": 0.12
+    }
+  },
+  "outputs": {
+    "video": "D:\\作业\\软工\\results\\V1\\variants\\dark.mp4",
+    "csv": "D:\\作业\\软工\\results\\V1\\variants\\dark_frames.csv",
+    "json": "D:\\作业\\软工\\results\\V1\\variants\\dark.json"
+  }
+}

@@ -1,0 +1,1767 @@
+{
+  "device_info": {
+    "hostname": "HesirLaptop",
+    "os": "Windows 11",
+    "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+    "cpu_cores_physical": 24,
+    "ram_gb": 63.4,
+    "python": "3.13.9",
+    "torch": "2.14.1+cpu",
+    "torch_threads": 24,
+    "torch_cuda_available": false,
+    "gpu": null,
+    "cv2": "5.0.0",
+    "ultralytics": "8.4.183",
+    "numpy": "2.5.2"
+  },
+  "config": {
+    "model": "D:\\作业\\软工\\models\\birdnet\\BirdNET_GLOBAL_6K_V2.4_Model_FP32.tflite",
+    "labels": 6522,
+    "window_s": 3.0,
+    "hop_s": 1.5,
+    "topk": 5,
+    "threads": 4,
+    "sample_rate": 48000
+  },
+  "runs": [
+    {
+      "clip": "A1_blackbird.wav",
+      "expected": "Turdus merula",
+      "kind": "bird",
+      "audio_s": 10.0,
+      "window_s": 3.0,
+      "hop_s": 1.5,
+      "windows": 6,
+      "aggregate_topk": [
+        [
+          "Turdus merula_Eurasian Blackbird",
+          0.9771919846534729
+        ],
+        [
+          "Luscinia megarhynchos_Common Nightingale",
+          0.32758885622024536
+        ],
+        [
+          "Erithacus rubecula_European Robin",
+          0.14383698999881744
+        ],
+        [
+          "Oriolus oriolus_Eurasian Golden Oriole",
+          0.06043355539441109
+        ],
+        [
+          "Coccothraustes coccothraustes_Hawfinch",
+          0.04233057051897049
+        ]
+      ],
+      "hit_rank": 1,
+      "hit_top1": true,
+      "hit_top3": true,
+      "latency_ms": {
+        "n": 6,
+        "mean": 18.35,
+        "p50": 16.57,
+        "p95": 24.5,
+        "p99": 26.34,
+        "min": 16.15,
+        "max": 26.8
+      },
+      "load_ms": 2.88,
+      "per_window": [
+        {
+          "start_s": 0.0,
+          "end_s": 3.0,
+          "latency_ms": 26.8,
+          "topk": [
+            [
+              "Turdus merula_Eurasian Blackbird",
+              0.6774858236312866
+            ],
+            [
+              "Coccothraustes coccothraustes_Hawfinch",
+              0.04233057051897049
+            ],
+            [
+              "Erithacus rubecula_European Robin",
+              0.025961576029658318
+            ],
+            [
+              "Turdus viscivorus_Mistle Thrush",
+              0.006807425059378147
+            ],
+            [
+              "Pyrrhula pyrrhula_Eurasian Bullfinch",
+              0.0058759464882314205
+            ]
+          ]
+        },
+        {
+          "start_s": 1.5,
+          "end_s": 4.5,
+          "latency_ms": 17.58,
+          "topk": [
+            [
+              "Turdus merula_Eurasian Blackbird",
+              0.9771919846534729
+            ],
+            [
+              "Erithacus rubecula_European Robin",
+              0.08289598673582077
+            ],
+            [
+              "Turdus philomelos_Song Thrush",
+              0.009881525300443172
+            ],
+            [
+              "Luscinia megarhynchos_Common Nightingale",
+              0.003367149969562888
+            ],
+            [
+              "Turdus hortulorum_Gray-backed Thrush",
+              0.002086708787828684
+            ]
+          ]
+        },
+        {
+          "start_s": 3.0,
+          "end_s": 6.0,
+          "latency_ms": 16.42,
+          "topk": [
+            [
+              "Turdus merula_Eurasian Blackbird",
+              0.9312393665313721
+            ],
+            [
+              "Erithacus rubecula_European Robin",
+              0.14383698999881744
+            ],
+            [
+              "Turdus philomelos_Song Thrush",
+              0.017812706530094147
+            ],
+            [
+              "Coccothraustes coccothraustes_Hawfinch",
+              0.01230097096413374
+            ],
+            [
+              "Sylvia borin_Garden Warbler",
+              0.010334291495382786
+            ]
+          ]
+        },
+        {
+          "start_s": 4.5,
+          "end_s": 7.5,
+          "latency_ms": 16.15,
+          "topk": [
+            [
+              "Turdus merula_Eurasian Blackbird",
+              0.9465357661247253
+            ],
+            [
+              "Erithacus rubecula_European Robin",
+              0.0634550079703331
+            ],
+            [
+              "Coccothraustes coccothraustes_Hawfinch",
+              0.015555714257061481
+            ],
+            [
+              "Sylvia atricapilla_Eurasian Blackcap",
+              0.00648771645501256
+            ],
+            [
+              "Turdus philomelos_Song Thrush",
+              0.006087617948651314
+            ]
+          ]
+        },
+        {
+          "start_s": 6.0,
+          "end_s": 9.0,
+          "latency_ms": 16.72,
+          "topk": [
+            [
+              "Turdus merula_Eurasian Blackbird",
+              0.5562789440155029
+            ],
+            [
+              "Luscinia megarhynchos_Common Nightingale",
+              0.32758885622024536
+            ],
+            [
+              "Erithacus rubecula_European Robin",
+              0.06560251861810684
+            ],
+            [
+              "Sylvia atricapilla_Eurasian Blackcap",
+              0.030367888510227203
+            ],
+            [
+              "Coccothraustes coccothraustes_Hawfinch",
+              0.02808883599936962
+            ]
+          ]
+        },
+        {
+          "start_s": 7.5,
+          "end_s": 10.5,
+          "latency_ms": 16.43,
+          "topk": [
+            [
+              "Turdus merula_Eurasian Blackbird",
+              0.13326933979988098
+            ],
+            [
+              "Erithacus rubecula_European Robin",
+              0.09113424271345139
+            ],
+            [
+              "Oriolus oriolus_Eurasian Golden Oriole",
+              0.06043355539441109
+            ],
+            [
+              "Picus viridis_Eurasian Green Woodpecker",
+              0.03319096937775612
+            ],
+            [
+              "Dendrocopos major_Great Spotted Woodpecker",
+              0.024930568411946297
+            ]
+          ]
+        }
+      ],
+      "above_0_25": [
+        [
+          "Turdus merula_Eurasian Blackbird",
+          0.9772
+        ],
+        [
+          "Luscinia megarhynchos_Common Nightingale",
+          0.3276
+        ]
+      ]
+    },
+    {
+      "clip": "A2_greattit.wav",
+      "expected": "Parus major",
+      "kind": "bird",
+      "audio_s": 10.0,
+      "window_s": 3.0,
+      "hop_s": 1.5,
+      "windows": 6,
+      "aggregate_topk": [
+        [
+          "Parus major_Great Tit",
+          0.9652059674263
+        ],
+        [
+          "Rhipidura albicollis_White-throated Fantail",
+          0.3862648606300354
+        ],
+        [
+          "Prunella modularis_Dunnock",
+          0.2711150646209717
+        ],
+        [
+          "Phyllergates cucullatus_Mountain Tailorbird",
+          0.17983373999595642
+        ],
+        [
+          "Turdus viscivorus_Mistle Thrush",
+          0.14643841981887817
+        ]
+      ],
+      "hit_rank": 1,
+      "hit_top1": true,
+      "hit_top3": true,
+      "latency_ms": {
+        "n": 6,
+        "mean": 16.65,
+        "p50": 16.5,
+        "p95": 17.21,
+        "p99": 17.26,
+        "min": 16.25,
+        "max": 17.27
+      },
+      "load_ms": 2.64,
+      "per_window": [
+        {
+          "start_s": 0.0,
+          "end_s": 3.0,
+          "latency_ms": 17.27,
+          "topk": [
+            [
+              "Prunella modularis_Dunnock",
+              0.2711150646209717
+            ],
+            [
+              "Zoothera aurea_White's Thrush",
+              0.02048899605870247
+            ],
+            [
+              "Tetrastes bonasia_Hazel Grouse",
+              0.012928466312587261
+            ],
+            [
+              "Spinus spinus_Eurasian Siskin",
+              0.01267564482986927
+            ],
+            [
+              "Cryptillas victorini_Victorin's Warbler",
+              0.01063314639031887
+            ]
+          ]
+        },
+        {
+          "start_s": 1.5,
+          "end_s": 4.5,
+          "latency_ms": 16.36,
+          "topk": [
+            [
+              "Parus major_Great Tit",
+              0.6179081201553345
+            ],
+            [
+              "Rhipidura albicollis_White-throated Fantail",
+              0.031539469957351685
+            ],
+            [
+              "Parus monticolus_Green-backed Tit",
+              0.025694452226161957
+            ],
+            [
+              "Petroica macrocephala_Tomtit",
+              0.010767347179353237
+            ],
+            [
+              "Dasyornis longirostris_Western Bristlebird",
+              0.007386637851595879
+            ]
+          ]
+        },
+        {
+          "start_s": 3.0,
+          "end_s": 6.0,
+          "latency_ms": 16.36,
+          "topk": [
+            [
+              "Parus major_Great Tit",
+              0.9098623394966125
+            ],
+            [
+              "Parus monticolus_Green-backed Tit",
+              0.0062972200103104115
+            ],
+            [
+              "Rhipidura albicollis_White-throated Fantail",
+              0.0025461583863943815
+            ],
+            [
+              "Periparus ater_Coal Tit",
+              0.0021986712235957384
+            ],
+            [
+              "Gerygone igata_Gray Gerygone",
+              0.0020006962586194277
+            ]
+          ]
+        },
+        {
+          "start_s": 4.5,
+          "end_s": 7.5,
+          "latency_ms": 16.64,
+          "topk": [
+            [
+              "Parus major_Great Tit",
+              0.9652059674263
+            ],
+            [
+              "Parus monticolus_Green-backed Tit",
+              0.009016129188239574
+            ],
+            [
+              "Horornis brunnescens_Hume's Bush Warbler",
+              0.0043418011628091335
+            ],
+            [
+              "Periparus ater_Coal Tit",
+              0.003944226540625095
+            ],
+            [
+              "Poecile montanus_Willow Tit",
+              0.0028218207880854607
+            ]
+          ]
+        },
+        {
+          "start_s": 6.0,
+          "end_s": 9.0,
+          "latency_ms": 17.04,
+          "topk": [
+            [
+              "Rhipidura albicollis_White-throated Fantail",
+              0.3862648606300354
+            ],
+            [
+              "Phyllergates cucullatus_Mountain Tailorbird",
+              0.17983373999595642
+            ],
+            [
+              "Phylloscopus ruficapilla_Yellow-throated Woodland-Warbler",
+              0.015607740730047226
+            ],
+            [
+              "Phylloscopus magnirostris_Large-billed Leaf Warbler",
+              0.009990436024963856
+            ],
+            [
+              "Rhipidura teysmanni_Sulawesi Fantail",
+              0.009823653846979141
+            ]
+          ]
+        },
+        {
+          "start_s": 7.5,
+          "end_s": 10.5,
+          "latency_ms": 16.25,
+          "topk": [
+            [
+              "Turdus viscivorus_Mistle Thrush",
+              0.14643841981887817
+            ],
+            [
+              "Milvus milvus_Red Kite",
+              0.10478858649730682
+            ],
+            [
+              "Buteo buteo_Common Buzzard",
+              0.10419347882270813
+            ],
+            [
+              "Pernis apivorus_European Honey-buzzard",
+              0.08193179965019226
+            ],
+            [
+              "Tetrastes bonasia_Hazel Grouse",
+              0.025210006162524223
+            ]
+          ]
+        }
+      ],
+      "above_0_25": [
+        [
+          "Parus major_Great Tit",
+          0.9652
+        ],
+        [
+          "Rhipidura albicollis_White-throated Fantail",
+          0.3863
+        ],
+        [
+          "Prunella modularis_Dunnock",
+          0.2711
+        ]
+      ]
+    },
+    {
+      "clip": "A3_bluetit.wav",
+      "expected": "Cyanistes caeruleus",
+      "kind": "bird",
+      "audio_s": 10.0,
+      "window_s": 3.0,
+      "hop_s": 1.5,
+      "windows": 6,
+      "aggregate_topk": [
+        [
+          "Cyanistes caeruleus_Eurasian Blue Tit",
+          0.9995713829994202
+        ],
+        [
+          "Engine_Engine",
+          0.4657573103904724
+        ],
+        [
+          "Human vocal_Human vocal",
+          0.3349567651748657
+        ],
+        [
+          "Turdus merula_Eurasian Blackbird",
+          0.3195083439350128
+        ],
+        [
+          "Turdus boulboul_Gray-winged Blackbird",
+          0.059744298458099365
+        ]
+      ],
+      "hit_rank": 1,
+      "hit_top1": true,
+      "hit_top3": true,
+      "latency_ms": {
+        "n": 6,
+        "mean": 17.26,
+        "p50": 17.09,
+        "p95": 18.11,
+        "p99": 18.19,
+        "min": 16.51,
+        "max": 18.21
+      },
+      "load_ms": 3.24,
+      "per_window": [
+        {
+          "start_s": 0.0,
+          "end_s": 3.0,
+          "latency_ms": 17.79,
+          "topk": [
+            [
+              "Cyanistes caeruleus_Eurasian Blue Tit",
+              0.9995713829994202
+            ],
+            [
+              "Human vocal_Human vocal",
+              0.2537361681461334
+            ],
+            [
+              "Engine_Engine",
+              0.04597066342830658
+            ],
+            [
+              "Dog_Dog",
+              0.00880160741508007
+            ],
+            [
+              "Parus major_Great Tit",
+              0.005232987925410271
+            ]
+          ]
+        },
+        {
+          "start_s": 1.5,
+          "end_s": 4.5,
+          "latency_ms": 16.85,
+          "topk": [
+            [
+              "Cyanistes caeruleus_Eurasian Blue Tit",
+              0.998132050037384
+            ],
+            [
+              "Human vocal_Human vocal",
+              0.3349567651748657
+            ],
+            [
+              "Engine_Engine",
+              0.30759114027023315
+            ],
+            [
+              "Dog_Dog",
+              0.017364652827382088
+            ],
+            [
+              "Siren_Siren",
+              0.01623586192727089
+            ]
+          ]
+        },
+        {
+          "start_s": 3.0,
+          "end_s": 6.0,
+          "latency_ms": 16.51,
+          "topk": [
+            [
+              "Cyanistes caeruleus_Eurasian Blue Tit",
+              0.9737024307250977
+            ],
+            [
+              "Engine_Engine",
+              0.4657573103904724
+            ],
+            [
+              "Human vocal_Human vocal",
+              0.21915307641029358
+            ],
+            [
+              "Parus major_Great Tit",
+              0.01110813394188881
+            ],
+            [
+              "Dog_Dog",
+              0.010892192833125591
+            ]
+          ]
+        },
+        {
+          "start_s": 4.5,
+          "end_s": 7.5,
+          "latency_ms": 16.84,
+          "topk": [
+            [
+              "Cyanistes caeruleus_Eurasian Blue Tit",
+              0.8975228667259216
+            ],
+            [
+              "Human vocal_Human vocal",
+              0.17582891881465912
+            ],
+            [
+              "Engine_Engine",
+              0.12982235848903656
+            ],
+            [
+              "Turdus merula_Eurasian Blackbird",
+              0.08071114867925644
+            ],
+            [
+              "Turdus boulboul_Gray-winged Blackbird",
+              0.021337591111660004
+            ]
+          ]
+        },
+        {
+          "start_s": 6.0,
+          "end_s": 9.0,
+          "latency_ms": 17.34,
+          "topk": [
+            [
+              "Cyanistes caeruleus_Eurasian Blue Tit",
+              0.8554742932319641
+            ],
+            [
+              "Engine_Engine",
+              0.44205838441848755
+            ],
+            [
+              "Turdus merula_Eurasian Blackbird",
+              0.3195083439350128
+            ],
+            [
+              "Human vocal_Human vocal",
+              0.10224626213312149
+            ],
+            [
+              "Turdus boulboul_Gray-winged Blackbird",
+              0.059744298458099365
+            ]
+          ]
+        },
+        {
+          "start_s": 7.5,
+          "end_s": 10.5,
+          "latency_ms": 18.21,
+          "topk": [
+            [
+              "Cyanistes caeruleus_Eurasian Blue Tit",
+              0.9967316389083862
+            ],
+            [
+              "Engine_Engine",
+              0.03354126960039139
+            ],
+            [
+              "Human vocal_Human vocal",
+              0.005534085910767317
+            ],
+            [
+              "Erithacus rubecula_European Robin",
+              0.005133504513651133
+            ],
+            [
+              "Parus major_Great Tit",
+              0.003984494600445032
+            ]
+          ]
+        }
+      ],
+      "above_0_25": [
+        [
+          "Cyanistes caeruleus_Eurasian Blue Tit",
+          0.9996
+        ],
+        [
+          "Engine_Engine",
+          0.4658
+        ],
+        [
+          "Human vocal_Human vocal",
+          0.335
+        ],
+        [
+          "Turdus merula_Eurasian Blackbird",
+          0.3195
+        ]
+      ]
+    },
+    {
+      "clip": "A4_cuckoo.wav",
+      "expected": "Cuculus canorus",
+      "kind": "bird",
+      "audio_s": 10.0,
+      "window_s": 3.0,
+      "hop_s": 1.5,
+      "windows": 6,
+      "aggregate_topk": [
+        [
+          "Cuculus canorus_Common Cuckoo",
+          0.9246798753738403
+        ],
+        [
+          "Tetrao urogallus_Western Capercaillie",
+          0.5146710276603699
+        ],
+        [
+          "Turdus philomelos_Song Thrush",
+          0.36479827761650085
+        ],
+        [
+          "Scolopax rusticola_Eurasian Woodcock",
+          0.14146237075328827
+        ],
+        [
+          "Setophaga tigrina_Cape May Warbler",
+          0.04423694312572479
+        ]
+      ],
+      "hit_rank": 1,
+      "hit_top1": true,
+      "hit_top3": true,
+      "latency_ms": {
+        "n": 6,
+        "mean": 17.31,
+        "p50": 17.17,
+        "p95": 18.34,
+        "p99": 18.51,
+        "min": 16.59,
+        "max": 18.55
+      },
+      "load_ms": 2.81,
+      "per_window": [
+        {
+          "start_s": 0.0,
+          "end_s": 3.0,
+          "latency_ms": 17.72,
+          "topk": [
+            [
+              "Cuculus canorus_Common Cuckoo",
+              0.9246798753738403
+            ],
+            [
+              "Scolopax rusticola_Eurasian Woodcock",
+              0.11528410017490387
+            ],
+            [
+              "Turdus philomelos_Song Thrush",
+              0.017539367079734802
+            ],
+            [
+              "Dryocopus martius_Black Woodpecker",
+              0.0022155505139380693
+            ],
+            [
+              "Accipiter gentilis_Northern Goshawk",
+              0.002121495082974434
+            ]
+          ]
+        },
+        {
+          "start_s": 1.5,
+          "end_s": 4.5,
+          "latency_ms": 16.59,
+          "topk": [
+            [
+              "Cuculus canorus_Common Cuckoo",
+              0.9201188683509827
+            ],
+            [
+              "Scolopax rusticola_Eurasian Woodcock",
+              0.14146237075328827
+            ],
+            [
+              "Turdus philomelos_Song Thrush",
+              0.09529654681682587
+            ],
+            [
+              "Accipiter gentilis_Northern Goshawk",
+              0.007423230912536383
+            ],
+            [
+              "Muscicapa dauurica_Asian Brown Flycatcher",
+              0.003951062448322773
+            ]
+          ]
+        },
+        {
+          "start_s": 3.0,
+          "end_s": 6.0,
+          "latency_ms": 17.2,
+          "topk": [
+            [
+              "Turdus philomelos_Song Thrush",
+              0.36479827761650085
+            ],
+            [
+              "Scolopax rusticola_Eurasian Woodcock",
+              0.06021624803543091
+            ],
+            [
+              "Columba palumbus_Common Wood-Pigeon",
+              0.028439674526453018
+            ],
+            [
+              "Accipiter gentilis_Northern Goshawk",
+              0.021314112469553947
+            ],
+            [
+              "Setophaga fusca_Blackburnian Warbler",
+              0.0211727786809206
+            ]
+          ]
+        },
+        {
+          "start_s": 4.5,
+          "end_s": 7.5,
+          "latency_ms": 18.55,
+          "topk": [
+            [
+              "Turdus philomelos_Song Thrush",
+              0.07171209901571274
+            ],
+            [
+              "Setophaga tigrina_Cape May Warbler",
+              0.04423694312572479
+            ],
+            [
+              "Setophaga fusca_Blackburnian Warbler",
+              0.026136307045817375
+            ],
+            [
+              "Scolopax rusticola_Eurasian Woodcock",
+              0.023426763713359833
+            ],
+            [
+              "Setophaga pensylvanica_Chestnut-sided Warbler",
+              0.022768696770071983
+            ]
+          ]
+        },
+        {
+          "start_s": 6.0,
+          "end_s": 9.0,
+          "latency_ms": 16.68,
+          "topk": [
+            [
+              "Turdus philomelos_Song Thrush",
+              0.2032124102115631
+            ],
+            [
+              "Scolopax rusticola_Eurasian Woodcock",
+              0.09890640527009964
+            ],
+            [
+              "Turdus merula_Eurasian Blackbird",
+              0.021421382203698158
+            ],
+            [
+              "Sturnus unicolor_Spotless Starling",
+              0.020078744739294052
+            ],
+            [
+              "Turdus flavipes_Yellow-legged Thrush",
+              0.019230950623750687
+            ]
+          ]
+        },
+        {
+          "start_s": 7.5,
+          "end_s": 10.5,
+          "latency_ms": 17.14,
+          "topk": [
+            [
+              "Tetrao urogallus_Western Capercaillie",
+              0.5146710276603699
+            ],
+            [
+              "Turdus philomelos_Song Thrush",
+              0.18139804899692535
+            ],
+            [
+              "Ficedula albicollis_Collared Flycatcher",
+              0.03524355962872505
+            ],
+            [
+              "Ficedula parva_Red-breasted Flycatcher",
+              0.019084997475147247
+            ],
+            [
+              "Strix uralensis_Ural Owl",
+              0.015803011134266853
+            ]
+          ]
+        }
+      ],
+      "above_0_25": [
+        [
+          "Cuculus canorus_Common Cuckoo",
+          0.9247
+        ],
+        [
+          "Tetrao urogallus_Western Capercaillie",
+          0.5147
+        ],
+        [
+          "Turdus philomelos_Song Thrush",
+          0.3648
+        ]
+      ]
+    },
+    {
+      "clip": "A5_chaffinch.wav",
+      "expected": "Fringilla coelebs",
+      "kind": "bird",
+      "audio_s": 10.0,
+      "window_s": 3.0,
+      "hop_s": 1.5,
+      "windows": 6,
+      "aggregate_topk": [
+        [
+          "Fringilla coelebs_Common Chaffinch",
+          0.9045953154563904
+        ],
+        [
+          "Parus major_Great Tit",
+          0.09465067088603973
+        ],
+        [
+          "Glaucidium passerinum_Eurasian Pygmy-Owl",
+          0.03327665477991104
+        ],
+        [
+          "Turdus pilaris_Fieldfare",
+          0.012796890921890736
+        ],
+        [
+          "Picus canus_Gray-headed Woodpecker",
+          0.009774765931069851
+        ]
+      ],
+      "hit_rank": 1,
+      "hit_top1": true,
+      "hit_top3": true,
+      "latency_ms": {
+        "n": 6,
+        "mean": 16.8,
+        "p50": 16.82,
+        "p95": 17.47,
+        "p99": 17.49,
+        "min": 16.03,
+        "max": 17.49
+      },
+      "load_ms": 2.68,
+      "per_window": [
+        {
+          "start_s": 0.0,
+          "end_s": 3.0,
+          "latency_ms": 16.22,
+          "topk": [
+            [
+              "Fringilla coelebs_Common Chaffinch",
+              0.7496991157531738
+            ],
+            [
+              "Parus major_Great Tit",
+              0.09465067088603973
+            ],
+            [
+              "Glaucidium passerinum_Eurasian Pygmy-Owl",
+              0.013612579554319382
+            ],
+            [
+              "Picus canus_Gray-headed Woodpecker",
+              0.008771796710789204
+            ],
+            [
+              "Turdus pilaris_Fieldfare",
+              0.00848388858139515
+            ]
+          ]
+        },
+        {
+          "start_s": 1.5,
+          "end_s": 4.5,
+          "latency_ms": 16.03,
+          "topk": [
+            [
+              "Fringilla coelebs_Common Chaffinch",
+              0.7700443863868713
+            ],
+            [
+              "Parus major_Great Tit",
+              0.044168341904878616
+            ],
+            [
+              "Glaucidium passerinum_Eurasian Pygmy-Owl",
+              0.01374108623713255
+            ],
+            [
+              "Turdus pilaris_Fieldfare",
+              0.009097584523260593
+            ],
+            [
+              "Dendrocopos major_Great Spotted Woodpecker",
+              0.0064460719004273415
+            ]
+          ]
+        },
+        {
+          "start_s": 3.0,
+          "end_s": 6.0,
+          "latency_ms": 17.49,
+          "topk": [
+            [
+              "Fringilla coelebs_Common Chaffinch",
+              0.8943052887916565
+            ],
+            [
+              "Glaucidium passerinum_Eurasian Pygmy-Owl",
+              0.022535208612680435
+            ],
+            [
+              "Parus major_Great Tit",
+              0.02114662155508995
+            ],
+            [
+              "Dendrocopos major_Great Spotted Woodpecker",
+              0.007635660003870726
+            ],
+            [
+              "Turdus pilaris_Fieldfare",
+              0.007351812906563282
+            ]
+          ]
+        },
+        {
+          "start_s": 4.5,
+          "end_s": 7.5,
+          "latency_ms": 17.4,
+          "topk": [
+            [
+              "Fringilla coelebs_Common Chaffinch",
+              0.9045953154563904
+            ],
+            [
+              "Parus major_Great Tit",
+              0.01874569244682789
+            ],
+            [
+              "Glaucidium passerinum_Eurasian Pygmy-Owl",
+              0.008951705880463123
+            ],
+            [
+              "Dendrocopos major_Great Spotted Woodpecker",
+              0.004336230456829071
+            ],
+            [
+              "Turdus pilaris_Fieldfare",
+              0.003822162514552474
+            ]
+          ]
+        },
+        {
+          "start_s": 6.0,
+          "end_s": 9.0,
+          "latency_ms": 16.58,
+          "topk": [
+            [
+              "Fringilla coelebs_Common Chaffinch",
+              0.8221116065979004
+            ],
+            [
+              "Glaucidium passerinum_Eurasian Pygmy-Owl",
+              0.022499561309814453
+            ],
+            [
+              "Parus major_Great Tit",
+              0.020140254870057106
+            ],
+            [
+              "Turdus pilaris_Fieldfare",
+              0.004827669356018305
+            ],
+            [
+              "Turdus viscivorus_Mistle Thrush",
+              0.0033036908134818077
+            ]
+          ]
+        },
+        {
+          "start_s": 7.5,
+          "end_s": 10.5,
+          "latency_ms": 17.06,
+          "topk": [
+            [
+              "Fringilla coelebs_Common Chaffinch",
+              0.8551620841026306
+            ],
+            [
+              "Glaucidium passerinum_Eurasian Pygmy-Owl",
+              0.03327665477991104
+            ],
+            [
+              "Parus major_Great Tit",
+              0.01421588845551014
+            ],
+            [
+              "Turdus pilaris_Fieldfare",
+              0.012796890921890736
+            ],
+            [
+              "Picus canus_Gray-headed Woodpecker",
+              0.009774765931069851
+            ]
+          ]
+        }
+      ],
+      "above_0_25": [
+        [
+          "Fringilla coelebs_Common Chaffinch",
+          0.9046
+        ]
+      ]
+    },
+    {
+      "clip": "N1_speech.wav",
+      "expected": "(human speech)",
+      "kind": "negative",
+      "audio_s": 10.0,
+      "window_s": 3.0,
+      "hop_s": 1.5,
+      "windows": 6,
+      "aggregate_topk": [
+        [
+          "Human vocal_Human vocal",
+          0.0438307449221611
+        ],
+        [
+          "Gun_Gun",
+          0.03509710356593132
+        ],
+        [
+          "Human whistle_Human whistle",
+          0.013890918344259262
+        ],
+        [
+          "Dog_Dog",
+          0.012792078778147697
+        ],
+        [
+          "Numenius americanus_Long-billed Curlew",
+          0.0114522660151124
+        ]
+      ],
+      "hit_rank": null,
+      "hit_top1": false,
+      "hit_top3": false,
+      "latency_ms": {
+        "n": 6,
+        "mean": 16.82,
+        "p50": 17.04,
+        "p95": 17.54,
+        "p99": 17.65,
+        "min": 15.59,
+        "max": 17.68
+      },
+      "load_ms": 2.82,
+      "per_window": [
+        {
+          "start_s": 0.0,
+          "end_s": 3.0,
+          "latency_ms": 15.59,
+          "topk": [
+            [
+              "Human vocal_Human vocal",
+              0.025367096066474915
+            ],
+            [
+              "Gun_Gun",
+              0.017727013677358627
+            ],
+            [
+              "Human whistle_Human whistle",
+              0.013890918344259262
+            ],
+            [
+              "Selasphorus calliope_Calliope Hummingbird",
+              0.010547618381679058
+            ],
+            [
+              "Dog_Dog",
+              0.010033059865236282
+            ]
+          ]
+        },
+        {
+          "start_s": 1.5,
+          "end_s": 4.5,
+          "latency_ms": 17.08,
+          "topk": [
+            [
+              "Pseudacris crucifer_Spring Peeper",
+              0.009274526499211788
+            ],
+            [
+              "Anthus rubescens_American Pipit",
+              0.007652005646377802
+            ],
+            [
+              "Ardea herodias_Great Blue Heron",
+              0.007374615874141455
+            ],
+            [
+              "Human whistle_Human whistle",
+              0.0072904606349766254
+            ],
+            [
+              "Euphagus cyanocephalus_Brewer's Blackbird",
+              0.007055425085127354
+            ]
+          ]
+        },
+        {
+          "start_s": 3.0,
+          "end_s": 6.0,
+          "latency_ms": 17.12,
+          "topk": [
+            [
+              "Euphagus cyanocephalus_Brewer's Blackbird",
+              0.0111708864569664
+            ],
+            [
+              "Laniarius luehderi_Lühder's Bushshrike",
+              0.010246421210467815
+            ],
+            [
+              "Human vocal_Human vocal",
+              0.010061878710985184
+            ],
+            [
+              "Anthus rubescens_American Pipit",
+              0.007646999321877956
+            ],
+            [
+              "Lanius humeralis_Northern Fiscal",
+              0.00667892349883914
+            ]
+          ]
+        },
+        {
+          "start_s": 4.5,
+          "end_s": 7.5,
+          "latency_ms": 17.0,
+          "topk": [
+            [
+              "Human vocal_Human vocal",
+              0.017623787745833397
+            ],
+            [
+              "Serinus canaria_Island Canary",
+              0.008389897644519806
+            ],
+            [
+              "Ardea herodias_Great Blue Heron",
+              0.007240457460284233
+            ],
+            [
+              "Pseudacris crucifer_Spring Peeper",
+              0.006456328090280294
+            ],
+            [
+              "Sialia currucoides_Mountain Bluebird",
+              0.0063898004591465
+            ]
+          ]
+        },
+        {
+          "start_s": 6.0,
+          "end_s": 9.0,
+          "latency_ms": 16.47,
+          "topk": [
+            [
+              "Human vocal_Human vocal",
+              0.01767355389893055
+            ],
+            [
+              "Gun_Gun",
+              0.010170540772378445
+            ],
+            [
+              "Pseudacris crucifer_Spring Peeper",
+              0.008749006316065788
+            ],
+            [
+              "Calamospiza melanocorys_Lark Bunting",
+              0.007522754371166229
+            ],
+            [
+              "Human whistle_Human whistle",
+              0.006621600594371557
+            ]
+          ]
+        },
+        {
+          "start_s": 7.5,
+          "end_s": 10.5,
+          "latency_ms": 17.68,
+          "topk": [
+            [
+              "Human vocal_Human vocal",
+              0.0438307449221611
+            ],
+            [
+              "Gun_Gun",
+              0.03509710356593132
+            ],
+            [
+              "Dog_Dog",
+              0.012792078778147697
+            ],
+            [
+              "Numenius americanus_Long-billed Curlew",
+              0.0114522660151124
+            ],
+            [
+              "Human whistle_Human whistle",
+              0.009875272400677204
+            ]
+          ]
+        }
+      ],
+      "above_0_25": []
+    },
+    {
+      "clip": "N2_traffic.wav",
+      "expected": "(city traffic)",
+      "kind": "negative",
+      "audio_s": 10.0,
+      "window_s": 3.0,
+      "hop_s": 1.5,
+      "windows": 6,
+      "aggregate_topk": [
+        [
+          "Puffinus puffinus_Manx Shearwater",
+          0.47105923295021057
+        ],
+        [
+          "Porzana porzana_Spotted Crake",
+          0.131052166223526
+        ],
+        [
+          "Larus occidentalis_Western Gull",
+          0.10517431050539017
+        ],
+        [
+          "Anser anser_Graylag Goose",
+          0.07958977669477463
+        ],
+        [
+          "Gavia adamsii_Yellow-billed Loon",
+          0.07440032809972763
+        ]
+      ],
+      "hit_rank": null,
+      "hit_top1": false,
+      "hit_top3": false,
+      "latency_ms": {
+        "n": 6,
+        "mean": 17.39,
+        "p50": 17.36,
+        "p95": 17.63,
+        "p99": 17.69,
+        "min": 17.16,
+        "max": 17.7
+      },
+      "load_ms": 3.11,
+      "per_window": [
+        {
+          "start_s": 0.0,
+          "end_s": 3.0,
+          "latency_ms": 17.34,
+          "topk": [
+            [
+              "Anthochaera carunculata_Red Wattlebird",
+              0.014184130355715752
+            ],
+            [
+              "Colluricincla harmonica_Gray Shrikethrush",
+              0.010541290044784546
+            ],
+            [
+              "Pyrrholaemus sagittatus_Speckled Warbler",
+              0.008499794639647007
+            ],
+            [
+              "Anser anser_Graylag Goose",
+              0.008006356656551361
+            ],
+            [
+              "Ptilotula penicillata_White-plumed Honeyeater",
+              0.007584940176457167
+            ]
+          ]
+        },
+        {
+          "start_s": 1.5,
+          "end_s": 4.5,
+          "latency_ms": 17.41,
+          "topk": [
+            [
+              "Puffinus puffinus_Manx Shearwater",
+              0.47105923295021057
+            ],
+            [
+              "Gavia adamsii_Yellow-billed Loon",
+              0.07440032809972763
+            ],
+            [
+              "Anser anser_Graylag Goose",
+              0.015220614150166512
+            ],
+            [
+              "Gymnorhina tibicen_Australian Magpie",
+              0.014773174189031124
+            ],
+            [
+              "Corvus orru_Torresian Crow",
+              0.013675333932042122
+            ]
+          ]
+        },
+        {
+          "start_s": 3.0,
+          "end_s": 6.0,
+          "latency_ms": 17.38,
+          "topk": [
+            [
+              "Puffinus puffinus_Manx Shearwater",
+              0.38546109199523926
+            ],
+            [
+              "Anser anser_Graylag Goose",
+              0.07958977669477463
+            ],
+            [
+              "Larus argentatus_Herring Gull",
+              0.039360884577035904
+            ],
+            [
+              "Fratercula arctica_Atlantic Puffin",
+              0.03463244065642357
+            ],
+            [
+              "Rissa tridactyla_Black-legged Kittiwake",
+              0.02254568040370941
+            ]
+          ]
+        },
+        {
+          "start_s": 4.5,
+          "end_s": 7.5,
+          "latency_ms": 17.7,
+          "topk": [
+            [
+              "Puffinus puffinus_Manx Shearwater",
+              0.1848180741071701
+            ],
+            [
+              "Larus occidentalis_Western Gull",
+              0.10517431050539017
+            ],
+            [
+              "Rissa tridactyla_Black-legged Kittiwake",
+              0.0546734444797039
+            ],
+            [
+              "Larus argentatus_Herring Gull",
+              0.04330288991332054
+            ],
+            [
+              "Anser anser_Graylag Goose",
+              0.02259846217930317
+            ]
+          ]
+        },
+        {
+          "start_s": 6.0,
+          "end_s": 9.0,
+          "latency_ms": 17.16,
+          "topk": [
+            [
+              "Grus grus_Common Crane",
+              0.057146526873111725
+            ],
+            [
+              "Phasianus colchicus_Ring-necked Pheasant",
+              0.056145958602428436
+            ],
+            [
+              "Porzana porzana_Spotted Crake",
+              0.056094732135534286
+            ],
+            [
+              "Puffinus puffinus_Manx Shearwater",
+              0.031019426882267
+            ],
+            [
+              "Ortalis ruficauda_Rufous-vented Chachalaca",
+              0.023372186347842216
+            ]
+          ]
+        },
+        {
+          "start_s": 7.5,
+          "end_s": 10.5,
+          "latency_ms": 17.33,
+          "topk": [
+            [
+              "Porzana porzana_Spotted Crake",
+              0.131052166223526
+            ],
+            [
+              "Ortalis ruficauda_Rufous-vented Chachalaca",
+              0.008631246164441109
+            ],
+            [
+              "Pterodroma sandwichensis_Hawaiian Petrel",
+              0.00792837142944336
+            ],
+            [
+              "Melozone cabanisi_Cabanis's Ground-Sparrow",
+              0.006582044530659914
+            ],
+            [
+              "Ortalis columbiana_Colombian Chachalaca",
+              0.005287690553814173
+            ]
+          ]
+        }
+      ],
+      "above_0_25": [
+        [
+          "Puffinus puffinus_Manx Shearwater",
+          0.4711
+        ]
+      ]
+    },
+    {
+      "clip": "N3_wind_synthetic.wav",
+      "expected": "(wind-like pink noise, synthetic)",
+      "kind": "negative",
+      "audio_s": 10.0,
+      "window_s": 3.0,
+      "hop_s": 1.5,
+      "windows": 6,
+      "aggregate_topk": [
+        [
+          "Psiloscops flammeolus_Flammulated Owl",
+          0.2534201443195343
+        ],
+        [
+          "Euphonia luteicapilla_Yellow-crowned Euphonia",
+          0.027862409129738808
+        ],
+        [
+          "Vireo olivaceus_Red-eyed Vireo",
+          0.007462059613317251
+        ],
+        [
+          "Troglodytes aedon_House Wren",
+          0.005861274898052216
+        ],
+        [
+          "Sitta canadensis_Red-breasted Nuthatch",
+          0.005528682842850685
+        ]
+      ],
+      "hit_rank": null,
+      "hit_top1": false,
+      "hit_top3": false,
+      "latency_ms": {
+        "n": 6,
+        "mean": 16.99,
+        "p50": 17.0,
+        "p95": 17.92,
+        "p99": 18.04,
+        "min": 16.11,
+        "max": 18.07
+      },
+      "load_ms": 3.22,
+      "per_window": [
+        {
+          "start_s": 0.0,
+          "end_s": 3.0,
+          "latency_ms": 18.07,
+          "topk": [
+            [
+              "Psiloscops flammeolus_Flammulated Owl",
+              0.2534201443195343
+            ],
+            [
+              "Euphonia luteicapilla_Yellow-crowned Euphonia",
+              0.027862409129738808
+            ],
+            [
+              "Ramphastos sulfuratus_Keel-billed Toucan",
+              0.004578310530632734
+            ],
+            [
+              "Amazilia tzacatl_Rufous-tailed Hummingbird",
+              0.003918618895113468
+            ],
+            [
+              "Basileuterus rufifrons_Rufous-capped Warbler",
+              0.0010092834709212184
+            ]
+          ]
+        },
+        {
+          "start_s": 1.5,
+          "end_s": 4.5,
+          "latency_ms": 16.33,
+          "topk": [
+            [
+              "Euphonia luteicapilla_Yellow-crowned Euphonia",
+              0.02442086860537529
+            ],
+            [
+              "Psiloscops flammeolus_Flammulated Owl",
+              0.021586183458566666
+            ],
+            [
+              "Vireo olivaceus_Red-eyed Vireo",
+              0.007462059613317251
+            ],
+            [
+              "Troglodytes aedon_House Wren",
+              0.005861274898052216
+            ],
+            [
+              "Sitta canadensis_Red-breasted Nuthatch",
+              0.004368610214442015
+            ]
+          ]
+        },
+        {
+          "start_s": 3.0,
+          "end_s": 6.0,
+          "latency_ms": 17.46,
+          "topk": [
+            [
+              "Euphonia luteicapilla_Yellow-crowned Euphonia",
+              0.005781167186796665
+            ],
+            [
+              "Amazilia tzacatl_Rufous-tailed Hummingbird",
+              0.0027649374678730965
+            ],
+            [
+              "Basileuterus rufifrons_Rufous-capped Warbler",
+              0.002046447480097413
+            ],
+            [
+              "Psiloscops flammeolus_Flammulated Owl",
+              0.00203708722256124
+            ],
+            [
+              "Sitta canadensis_Red-breasted Nuthatch",
+              0.0009002999868243933
+            ]
+          ]
+        },
+        {
+          "start_s": 4.5,
+          "end_s": 7.5,
+          "latency_ms": 17.32,
+          "topk": [
+            [
+              "Psiloscops flammeolus_Flammulated Owl",
+              0.010079690255224705
+            ],
+            [
+              "Euphonia luteicapilla_Yellow-crowned Euphonia",
+              0.005734116304665804
+            ],
+            [
+              "Basileuterus rufifrons_Rufous-capped Warbler",
+              0.0024948047939687967
+            ],
+            [
+              "Amazilia tzacatl_Rufous-tailed Hummingbird",
+              0.0018183785723522305
+            ],
+            [
+              "Regulus satrapa_Golden-crowned Kinglet",
+              0.0013737607514485717
+            ]
+          ]
+        },
+        {
+          "start_s": 6.0,
+          "end_s": 9.0,
+          "latency_ms": 16.67,
+          "topk": [
+            [
+              "Psiloscops flammeolus_Flammulated Owl",
+              0.0564330630004406
+            ],
+            [
+              "Sitta canadensis_Red-breasted Nuthatch",
+              0.005528682842850685
+            ],
+            [
+              "Regulus satrapa_Golden-crowned Kinglet",
+              0.005387397482991219
+            ],
+            [
+              "Megascops kennicottii_Western Screech-Owl",
+              0.004027838818728924
+            ],
+            [
+              "Euphonia luteicapilla_Yellow-crowned Euphonia",
+              0.003302938537672162
+            ]
+          ]
+        },
+        {
+          "start_s": 7.5,
+          "end_s": 10.5,
+          "latency_ms": 16.11,
+          "topk": [
+            [
+              "Euphonia luteicapilla_Yellow-crowned Euphonia",
+              0.015370615758001804
+            ],
+            [
+              "Amazilia tzacatl_Rufous-tailed Hummingbird",
+              0.0028676027432084084
+            ],
+            [
+              "Psiloscops flammeolus_Flammulated Owl",
+              0.0014607843477278948
+            ],
+            [
+              "Basileuterus rufifrons_Rufous-capped Warbler",
+              0.0012261980446055532
+            ],
+            [
+              "Euphonia hirundinacea_Yellow-throated Euphonia",
+              0.0009451263467781246
+            ]
+          ]
+        }
+      ],
+      "above_0_25": [
+        [
+          "Psiloscops flammeolus_Flammulated Owl",
+          0.2534
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "meta": {
+    "width": 1280,
+    "height": 720,
+    "fps": 29.97,
+    "frames": 3093,
+    "duration_s": 103.2
+  },
+  "source": "D:\\作业\\软工\\data\\videos\\V1_feeder_slovakia.webm",
+  "device_info": {
+    "hostname": "HesirLaptop",
+    "os": "Windows 11",
+    "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+    "cpu_cores_physical": 24,
+    "ram_gb": 63.4,
+    "python": "3.13.9",
+    "torch": "2.14.1+cpu",
+    "torch_threads": 8,
+    "torch_cuda_available": false,
+    "gpu": null,
+    "cv2": "5.0.0",
+    "ultralytics": "8.4.183",
+    "numpy": "2.5.2"
+  },
+  "config": {
+    "model": "d:\\作业\\软工\\models\\yolo11n.pt",
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.5,
+    "classes": "14",
+    "tracker": "bytetrack",
+    "cls_model": "efficientnet_b0",
+    "topk": 5,
+    "device_arg": "cpu",
+    "loops": 1,
+    "warmup": 5
+  },
+  "run": {
+    "frames_processed": 300,
+    "frames_in_stats": 295,
+    "wall_s": 9.89,
+    "fps_processed": 30.33,
+    "source_fps": 29.97,
+    "realtime_factor": 1.012
+  },
+  "detections": {
+    "total": 199,
+    "frames_with_bird": 199,
+    "frame_hit_rate": 0.6633,
+    "mean_per_frame": 0.663,
+    "box_side_px": {
+      "n": 199,
+      "mean": 163.76,
+      "p50": 144.12,
+      "p95": 316.01,
+      "p99": 399.23,
+      "min": 99.98,
+      "max": 401.63
+    },
+    "box_side_bins": {
+      "<32": 0,
+      "32-64": 0,
+      "64-128": 40,
+      ">=128": 159
+    }
+  },
+  "tracking": {
+    "unique_ids": 10,
+    "tracks_ge_5_frames": 5,
+    "tracks_ge_30_frames": 3,
+    "id_assignment_rate": 1.0,
+    "per_track": [
+      {
+        "track_id": 42,
+        "frames_seen": 93,
+        "first_frame": 206,
+        "last_frame": 299,
+        "mean_conf": 0.665,
+        "span_frames": 94,
+        "species_candidates": [
+          [
+            "brambling",
+            0.9779
+          ],
+          [
+            "house finch",
+            0.0076
+          ],
+          [
+            "robin",
+            0.0048
+          ],
+          [
+            "jacamar",
+            0.0031
+          ],
+          [
+            "partridge",
+            0.0016
+          ]
+        ]
+      },
+      {
+        "track_id": 34,
+        "frames_seen": 40,
+        "first_frame": 125,
+        "last_frame": 194,
+        "mean_conf": 0.74,
+        "span_frames": 70,
+        "species_candidates": [
+          [
+            "goldfinch",
+            0.6175
+          ],
+          [
+            "toucan",
+            0.1212
+          ],
+          [
+            "jacamar",
+            0.0538
+          ],
+          [
+            "king penguin",
+            0.0484
+          ],
+          [
+            "magpie",
+            0.0445
+          ]
+        ]
+      },
+      {
+        "track_id": 2,
+        "frames_seen": 36,
+        "first_frame": 7,
+        "last_frame": 66,
+        "mean_conf": 0.642,
+        "span_frames": 60,
+        "species_candidates": [
+          [
+            "goldfinch",
+            0.4717
+          ],
+          [
+            "brambling",
+            0.1588
+          ],
+          [
+            "toucan",
+            0.1252
+          ],
+          [
+            "chickadee",
+            0.0665
+          ],
+          [
+            "king penguin",
+            0.0408
+          ]
+        ]
+      },
+      {
+        "track_id": 38,
+        "frames_seen": 14,
+        "first_frame": 164,
+        "last_frame": 177,
+        "mean_conf": 0.691,
+        "span_frames": 14,
+        "species_candidates": [
+          [
+            "goldfinch",
+            0.4548
+          ],
+          [
+            "brambling",
+            0.176
+          ],
+          [
+            "jacamar",
+            0.1401
+          ],
+          [
+            "toucan",
+            0.0845
+          ],
+          [
+            "king penguin",
+            0.0477
+          ]
+        ]
+      },
+      {
+        "track_id": 39,
+        "frames_seen": 5,
+        "first_frame": 181,
+        "last_frame": 187,
+        "mean_conf": 0.676,
+        "span_frames": 7,
+        "species_candidates": [
+          [
+            "sulphur-crested cockatoo",
+            0.2852
+          ],
+          [
+            "American egret",
+            0.2753
+          ],
+          [
+            "kite",
+            0.1477
+          ],
+          [
+            "albatross",
+            0.1187
+          ],
+          [
+            "brambling",
+            0.0332
+          ]
+        ]
+      },
+      {
+        "track_id": 27,
+        "frames_seen": 4,
+        "first_frame": 109,
+        "last_frame": 115,
+        "mean_conf": 0.475,
+        "span_frames": 7,
+        "species_candidates": [
+          [
+            "goldfinch",
+            0.5278
+          ],
+          [
+            "brambling",
+            0.3277
+          ],
+          [
+            "toucan",
+            0.0481
+          ],
+          [
+            "macaw",
+            0.0311
+          ],
+          [
+            "king penguin",
+            0.0212
+          ]
+        ]
+      },
+      {
+        "track_id": 1,
+        "frames_seen": 3,
+        "first_frame": 0,
+        "last_frame": 2,
+        "mean_conf": 0.696,
+        "span_frames": 3,
+        "species_candidates": [
+          [
+            "black grouse",
+            0.2534
+          ],
+          [
+            "kite",
+            0.1896
+          ],
+          [
+            "brambling",
+            0.1455
+          ],
+          [
+            "albatross",
+            0.127
+          ],
+          [
+            "chickadee",
+            0.1134
+          ]
+        ]
+      },
+      {
+        "track_id": 25,
+        "frames_seen": 2,
+        "first_frame": 98,
+        "last_frame": 119,
+        "mean_conf": 0.602,
+        "span_frames": 22,
+        "species_candidates": [
+          [
+            "toucan",
+            0.3357
+          ],
+          [
+            "brambling",
+            0.1942
+          ],
+          [
+            "goldfinch",
+            0.1664
+          ],
+          [
+            "bulbul",
+            0.1294
+          ],
+          [
+            "black grouse",
+            0.0831
+          ]
+        ]
+      },
+      {
+        "track_id": 22,
+        "frames_seen": 1,
+        "first_frame": 94,
+        "last_frame": 94,
+        "mean_conf": 0.817,
+        "span_frames": 1,
+        "species_candidates": [
+          [
+            "brambling",
+            0.3256
+          ],
+          [
+            "sulphur-crested cockatoo",
+            0.3164
+          ],
+          [
+            "goldfinch",
+            0.1325
+          ],
+          [
+            "American egret",
+            0.1235
+          ],
+          [
+            "toucan",
+            0.102
+          ]
+        ]
+      },
+      {
+        "track_id": 41,
+        "frames_seen": 1,
+        "first_frame": 197,
+        "last_frame": 197,
+        "mean_conf": 0.331,
+        "span_frames": 1,
+        "species_candidates": [
+          [
+            "red-breasted merganser",
+            0.2696
+          ],
+          [
+            "African grey",
+            0.2166
+          ],
+          [
+            "brambling",
+            0.1811
+          ],
+          [
+            "chickadee",
+            0.1755
+          ],
+          [
+            "robin",
+            0.1572
+          ]
+        ]
+      }
+    ]
+  },
+  "species": {
+    "enabled": true,
+    "model": "efficientnet_b0",
+    "skipped_small_crops": 0,
+    "top1_histogram": {
+      "brambling": 98,
+      "goldfinch": 73,
+      "toucan": 8,
+      "sulphur-crested cockatoo": 3,
+      "ptarmigan": 3,
+      "chickadee": 2,
+      "jacamar": 2,
+      "king penguin": 1,
+      "bulbul": 1,
+      "American egret": 1,
+      "kite": 1,
+      "albatross": 1,
+      "junco": 1,
+      "red-breasted merganser": 1
+    }
+  },
+  "latency_ms": {
+    "e2e_ms": {
+      "n": 295,
+      "mean": 32.48,
+      "p50": 35.6,
+      "p95": 39.82,
+      "p99": 41.18,
+      "min": 19.69,
+      "max": 45.51
+    },
+    "infer_wall_ms": {
+      "n": 295,
+      "mean": 19.8,
+      "p50": 19.68,
+      "p95": 22.08,
+      "p99": 23.96,
+      "min": 16.07,
+      "max": 27.04
+    },
+    "model_inference_ms": {
+      "n": 295,
+      "mean": 17.56,
+      "p50": 17.45,
+      "p95": 19.9,
+      "p99": 21.07,
+      "min": 13.76,
+      "max": 23.56
+    },
+    "model_postprocess_ms": {
+      "n": 295,
+      "mean": 0.52,
+      "p50": 0.56,
+      "p95": 0.73,
+      "p99": 1.01,
+      "min": 0.25,
+      "max": 1.11
+    },
+    "model_preprocess_ms": {
+      "n": 295,
+      "mean": 0.71,
+      "p50": 0.68,
+      "p95": 0.86,
+      "p99": 1.04,
+      "min": 0.61,
+      "max": 1.57
+    },
+    "proc_ms": {
+      "n": 295,
+      "mean": 30.89,
+      "p50": 33.98,
+      "p95": 38.15,
+      "p99": 39.71,
+      "min": 18.25,
+      "max": 44.16
+    },
+    "read_ms": {
+      "n": 295,
+      "mean": 1.59,
+      "p50": 1.54,
+      "p95": 2.11,
+      "p99": 2.41,
+      "min": 1.03,
+      "max": 2.69
+    },
+    "species_ms": {
+      "n": 295,
+      "mean": 8.17,
+      "p50": 11.6,
+      "p95": 13.72,
+      "p99": 14.54,
+      "min": 0.01,
+      "max": 14.75
+    }
+  },
+  "outputs": {
+    "video": "D:\\作业\\软工\\results\\V1\\yolo11n_640_effb0.mp4",
+    "csv": "D:\\作业\\软工\\results\\V1\\yolo11n_640_effb0_frames.csv",
+    "json": "D:\\作业\\软工\\results\\V1\\yolo11n_640_effb0.json"
+  }
+}
