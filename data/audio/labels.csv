@@ -1,0 +1,9 @@
+clip,prefix,common_name,scientific_name,duration_s,rms,source,kind
+A1_blackbird.wav,A1,Common Blackbird,Turdus merula,10.0,0.09158,commons.wikimedia.org File:Turdus merula - Common Blackbird XC125792.ogg,bird
+A2_greattit.wav,A2,Great Tit,Parus major,10.0,0.09597,commons.wikimedia.org File:Parus major - Great Tit XC129643.ogg,bird
+A3_bluetit.wav,A3,Eurasian Blue Tit,Cyanistes caeruleus,10.0,0.04797,commons.wikimedia.org File:Cyanistes caeruleus - Eurasian Blue Tit XC131316.ogg,bird
+A4_cuckoo.wav,A4,Common Cuckoo,Cuculus canorus,10.0,0.01952,commons.wikimedia.org File:Cuculus canorus - Common Cuckoo XC457076.mp3,bird
+A5_chaffinch.wav,A5,Common Chaffinch,Fringilla coelebs,10.0,0.13268,commons.wikimedia.org File:Fringilla coelebs - Common Chaffinch XC489277.mp3,bird
+N1_speech.wav,N1,(human speech),,10.0,0.05456,commons.wikimedia.org File:Watt Wikipedia article spoken version.ogg,negative
+N2_traffic.wav,N2,(city traffic),,10.0,0.19981,commons.wikimedia.org File:Sunday in the city street noise1.ogg,negative
+N3_wind_synthetic.wav,N3,"(wind-like pink noise, synthetic)",,10.0,0.07012,synthesised (1/f noise),negative

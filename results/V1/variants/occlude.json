@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "width": 1280,
+    "height": 720,
+    "fps": 29.97,
+    "frames": 300,
+    "duration_s": 10.01
+  },
+  "source": "D:\\作业\\软工\\data\\videos\\variants\\V1_feeder_slovakia_occlude.mp4",
+  "device_info": {
+    "hostname": "HesirLaptop",
+    "os": "Windows 11",
+    "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+    "cpu_cores_physical": 24,
+    "ram_gb": 63.4,
+    "python": "3.13.9",
+    "torch": "2.14.1+cpu",
+    "torch_threads": 8,
+    "torch_cuda_available": false,
+    "gpu": null,
+    "cv2": "5.0.0",
+    "ultralytics": "8.4.183",
+    "numpy": "2.5.2"
+  },
+  "config": {
+    "model": "d:\\作业\\软工\\models\\yolo11n.pt",
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.5,
+    "classes": "14",
+    "tracker": "bytetrack",
+    "cls_model": "none",
+    "topk": 5,
+    "device_arg": "cpu",
+    "loops": 1,
+    "warmup": 5
+  },
+  "run": {
+    "frames_processed": 300,
+    "frames_in_stats": 295,
+    "wall_s": 9.19,
+    "fps_processed": 32.64,
+    "source_fps": 29.97,
+    "realtime_factor": 1.089
+  },
+  "detections": {
+    "total": 76,
+    "frames_with_bird": 76,
+    "frame_hit_rate": 0.2533,
+    "mean_per_frame": 0.253,
+    "box_side_px": {
+      "n": 76,
+      "mean": 114.58,
+      "p50": 111.0,
+      "p95": 144.02,
+      "p99": 193.59,
+      "min": 93.61,
+      "max": 194.7
+    },
+    "box_side_bins": {
+      "<32": 0,
+      "32-64": 0,
+      "64-128": 69,
+      ">=128": 7
+    }
+  },
+  "tracking": {
+    "unique_ids": 3,
+    "tracks_ge_5_frames": 2,
+    "tracks_ge_30_frames": 1,
+    "id_assignment_rate": 1.0,
+    "per_track": [
+      {
+        "track_id": 24,
+        "frames_seen": 66,
+        "first_frame": 206,
+        "last_frame": 271,
+        "mean_conf": 0.487,
+        "span_frames": 66
+      },
+      {
+        "track_id": 26,
+        "frames_seen": 7,
+        "first_frame": 293,
+        "last_frame": 299,
+        "mean_conf": 0.31,
+        "span_frames": 7
+      },
+      {
+        "track_id": 1,
+        "frames_seen": 3,
+        "first_frame": 0,
+        "last_frame": 2,
+        "mean_conf": 0.647,
+        "span_frames": 3
+      }
+    ]
+  },
+  "species": {
+    "enabled": false,
+    "model": "none",
+    "skipped_small_crops": 0,
+    "top1_histogram": {}
+  },
+  "latency_ms": {
+    "e2e_ms": {
+      "n": 295,
+      "mean": 24.07,
+      "p50": 23.87,
+      "p95": 27.26,
+      "p99": 28.9,
+      "min": 20.38,
+      "max": 30.65
+    },
+    "infer_wall_ms": {
+      "n": 295,
+      "mean": 20.0,
+      "p50": 19.75,
+      "p95": 23.15,
+      "p99": 24.34,
+      "min": 16.84,
+      "max": 25.82
+    },
+    "model_inference_ms": {
+      "n": 295,
+      "mean": 18.07,
+      "p50": 17.79,
+      "p95": 20.6,
+      "p99": 22.31,
+      "min": 15.08,
+      "max": 23.97
+    },
+    "model_postprocess_ms": {
+      "n": 295,
+      "mean": 0.43,
+      "p50": 0.36,
+      "p95": 0.65,
+      "p99": 0.87,
+      "min": 0.26,
+      "max": 1.5
+    },
+    "model_preprocess_ms": {
+      "n": 295,
+      "mean": 0.75,
+      "p50": 0.7,
+      "p95": 1.11,
+      "p99": 1.34,
+      "min": 0.63,
+      "max": 2.34
+    },
+    "proc_ms": {
+      "n": 295,
+      "mean": 22.56,
+      "p50": 22.27,
+      "p95": 25.72,
+      "p99": 27.3,
+      "min": 19.24,
+      "max": 28.34
+    },
+    "read_ms": {
+      "n": 295,
+      "mean": 1.5,
+      "p50": 1.46,
+      "p95": 2.03,
+      "p99": 2.27,
+      "min": 1.07,
+      "max": 2.39
+    },
+    "species_ms": {
+      "n": 295,
+      "mean": 0.02,
+      "p50": 0.01,
+      "p95": 0.06,
+      "p99": 0.08,
+      "min": 0.01,
+      "max": 0.09
+    }
+  },
+  "outputs": {
+    "video": "D:\\作业\\软工\\results\\V1\\variants\\occlude.mp4",
+    "csv": "D:\\作业\\软工\\results\\V1\\variants\\occlude_frames.csv",
+    "json": "D:\\作业\\软工\\results\\V1\\variants\\occlude.json"
+  }
+}

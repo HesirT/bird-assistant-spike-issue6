@@ -1,0 +1,157 @@
+{
+  "label": "n@1280 clean",
+  "ref_csv": "D:\\作业\\软工\\results\\V1\\ref_yolo11x_1280_frames.csv",
+  "pred_csv": "D:\\作业\\软工\\results\\V1\\yolo11n_1280_frames.csv",
+  "iou_threshold": 0.5,
+  "frames_compared": 244,
+  "ref_boxes": 351,
+  "matched": 246,
+  "recall_overall": 0.7009,
+  "per_bin": {
+    "<32px": {
+      "ref_boxes": 0,
+      "matched": 0,
+      "recall": null
+    },
+    "32-64px": {
+      "ref_boxes": 0,
+      "matched": 0,
+      "recall": null
+    },
+    "64-128px": {
+      "ref_boxes": 101,
+      "matched": 18,
+      "recall": 0.1782
+    },
+    ">=128px": {
+      "ref_boxes": 250,
+      "matched": 228,
+      "recall": 0.912
+    }
+  },
+  "pred_boxes": 259,
+  "pred_unmatched": 13,
+  "false_positive_rate_vs_ref": 0.0502,
+  "missed_examples": [
+    {
+      "frame": 194,
+      "side_px": 88.1,
+      "bin": "64-128px",
+      "best_iou": 0.496
+    },
+    {
+      "frame": 187,
+      "side_px": 111.7,
+      "bin": "64-128px",
+      "best_iou": 0.26
+    },
+    {
+      "frame": 188,
+      "side_px": 115.7,
+      "bin": "64-128px",
+      "best_iou": 0.312
+    },
+    {
+      "frame": 189,
+      "side_px": 117.1,
+      "bin": "64-128px",
+      "best_iou": 0.353
+    },
+    {
+      "frame": 190,
+      "side_px": 118.2,
+      "bin": "64-128px",
+      "best_iou": 0.396
+    },
+    {
+      "frame": 191,
+      "side_px": 118.9,
+      "bin": "64-128px",
+      "best_iou": 0.436
+    },
+    {
+      "frame": 228,
+      "side_px": 119.0,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 227,
+      "side_px": 119.2,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 226,
+      "side_px": 119.3,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 211,
+      "side_px": 119.6,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 212,
+      "side_px": 119.6,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 214,
+      "side_px": 119.7,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 215,
+      "side_px": 119.7,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 225,
+      "side_px": 119.8,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 229,
+      "side_px": 119.9,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 208,
+      "side_px": 120.0,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 210,
+      "side_px": 120.0,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 209,
+      "side_px": 120.1,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 224,
+      "side_px": 120.2,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 213,
+      "side_px": 120.3,
+      "bin": "64-128px",
+      "best_iou": 0.0
+    }
+  ]
+}

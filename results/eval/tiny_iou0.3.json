@@ -1,0 +1,157 @@
+{
+  "label": "tiny iou0.3",
+  "ref_csv": "D:\\作业\\软工\\results\\V1\\ref_yolo11x_1280_frames.csv",
+  "pred_csv": "D:\\作业\\软工\\results\\V1\\variants\\tiny_frames.csv",
+  "iou_threshold": 0.3,
+  "frames_compared": 124,
+  "ref_boxes": 196,
+  "matched": 124,
+  "recall_overall": 0.6327,
+  "per_bin": {
+    "<32px": {
+      "ref_boxes": 0,
+      "matched": 0,
+      "recall": null
+    },
+    "32-64px": {
+      "ref_boxes": 73,
+      "matched": 8,
+      "recall": 0.1096
+    },
+    "64-128px": {
+      "ref_boxes": 121,
+      "matched": 114,
+      "recall": 0.9421
+    },
+    ">=128px": {
+      "ref_boxes": 2,
+      "matched": 2,
+      "recall": 1.0
+    }
+  },
+  "pred_boxes": 124,
+  "pred_unmatched": 0,
+  "false_positive_rate_vs_ref": 0.0,
+  "missed_examples": [
+    {
+      "frame": 228,
+      "side_px": 59.5,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 227,
+      "side_px": 59.6,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 226,
+      "side_px": 59.7,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 211,
+      "side_px": 59.8,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 212,
+      "side_px": 59.8,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 214,
+      "side_px": 59.9,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 215,
+      "side_px": 59.9,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 225,
+      "side_px": 59.9,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 229,
+      "side_px": 59.9,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 208,
+      "side_px": 60.0,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 210,
+      "side_px": 60.0,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 209,
+      "side_px": 60.1,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 224,
+      "side_px": 60.1,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 213,
+      "side_px": 60.2,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 216,
+      "side_px": 60.2,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 217,
+      "side_px": 60.3,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 218,
+      "side_px": 60.4,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 223,
+      "side_px": 60.4,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 230,
+      "side_px": 60.4,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    },
+    {
+      "frame": 260,
+      "side_px": 60.4,
+      "bin": "32-64px",
+      "best_iou": 0.0
+    }
+  ]
+}

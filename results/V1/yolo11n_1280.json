@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "width": 1280,
+    "height": 720,
+    "fps": 29.97,
+    "frames": 3093,
+    "duration_s": 103.2
+  },
+  "source": "D:\\作业\\软工\\data\\videos\\V1_feeder_slovakia.webm",
+  "device_info": {
+    "hostname": "HesirLaptop",
+    "os": "Windows 11",
+    "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+    "cpu_cores_physical": 24,
+    "ram_gb": 63.4,
+    "python": "3.13.9",
+    "torch": "2.14.1+cpu",
+    "torch_threads": 8,
+    "torch_cuda_available": false,
+    "gpu": null,
+    "cv2": "5.0.0",
+    "ultralytics": "8.4.183",
+    "numpy": "2.5.2"
+  },
+  "config": {
+    "model": "d:\\作业\\软工\\models\\yolo11n.pt",
+    "imgsz": 1280,
+    "conf": 0.25,
+    "iou": 0.5,
+    "classes": "14",
+    "tracker": "bytetrack",
+    "cls_model": "none",
+    "topk": 5,
+    "device_arg": "cpu",
+    "loops": 1,
+    "warmup": 5
+  },
+  "run": {
+    "frames_processed": 300,
+    "frames_in_stats": 295,
+    "wall_s": 18.06,
+    "fps_processed": 16.61,
+    "source_fps": 29.97,
+    "realtime_factor": 0.554
+  },
+  "detections": {
+    "total": 267,
+    "frames_with_bird": 252,
+    "frame_hit_rate": 0.84,
+    "mean_per_frame": 0.89,
+    "box_side_px": {
+      "n": 267,
+      "mean": 170.63,
+      "p50": 144.69,
+      "p95": 273.2,
+      "p99": 311.84,
+      "min": 102.14,
+      "max": 329.59
+    },
+    "box_side_bins": {
+      "<32": 0,
+      "32-64": 0,
+      "64-128": 36,
+      ">=128": 231
+    }
+  },
+  "tracking": {
+    "unique_ids": 10,
+    "tracks_ge_5_frames": 8,
+    "tracks_ge_30_frames": 3,
+    "id_assignment_rate": 1.0,
+    "per_track": [
+      {
+        "track_id": 29,
+        "frames_seen": 94,
+        "first_frame": 206,
+        "last_frame": 299,
+        "mean_conf": 0.854,
+        "span_frames": 94
+      },
+      {
+        "track_id": 3,
+        "frames_seen": 60,
+        "first_frame": 7,
+        "last_frame": 68,
+        "mean_conf": 0.774,
+        "span_frames": 62
+      },
+      {
+        "track_id": 21,
+        "frames_seen": 33,
+        "first_frame": 125,
+        "last_frame": 161,
+        "mean_conf": 0.648,
+        "span_frames": 37
+      },
+      {
+        "track_id": 17,
+        "frames_seen": 25,
+        "first_frame": 98,
+        "last_frame": 123,
+        "mean_conf": 0.75,
+        "span_frames": 26
+      },
+      {
+        "track_id": 24,
+        "frames_seen": 22,
+        "first_frame": 163,
+        "last_frame": 194,
+        "mean_conf": 0.847,
+        "span_frames": 32
+      },
+      {
+        "track_id": 11,
+        "frames_seen": 15,
+        "first_frame": 13,
+        "last_frame": 38,
+        "mean_conf": 0.678,
+        "span_frames": 26
+      },
+      {
+        "track_id": 28,
+        "frames_seen": 7,
+        "first_frame": 198,
+        "last_frame": 204,
+        "mean_conf": 0.6,
+        "span_frames": 7
+      },
+      {
+        "track_id": 26,
+        "frames_seen": 5,
+        "first_frame": 181,
+        "last_frame": 186,
+        "mean_conf": 0.873,
+        "span_frames": 6
+      },
+      {
+        "track_id": 1,
+        "frames_seen": 3,
+        "first_frame": 0,
+        "last_frame": 2,
+        "mean_conf": 0.865,
+        "span_frames": 3
+      },
+      {
+        "track_id": 16,
+        "frames_seen": 3,
+        "first_frame": 94,
+        "last_frame": 96,
+        "mean_conf": 0.73,
+        "span_frames": 3
+      }
+    ]
+  },
+  "species": {
+    "enabled": false,
+    "model": "none",
+    "skipped_small_crops": 0,
+    "top1_histogram": {}
+  },
+  "latency_ms": {
+    "e2e_ms": {
+      "n": 295,
+      "mean": 53.29,
+      "p50": 52.87,
+      "p95": 57.84,
+      "p99": 62.52,
+      "min": 48.52,
+      "max": 65.64
+    },
+    "infer_wall_ms": {
+      "n": 295,
+      "mean": 48.72,
+      "p50": 48.44,
+      "p95": 53.06,
+      "p99": 57.9,
+      "min": 44.33,
+      "max": 60.87
+    },
+    "model_inference_ms": {
+      "n": 295,
+      "mean": 44.7,
+      "p50": 44.18,
+      "p95": 49.12,
+      "p99": 52.08,
+      "min": 39.76,
+      "max": 57.4
+    },
+    "model_postprocess_ms": {
+      "n": 295,
+      "mean": 0.69,
+      "p50": 0.68,
+      "p95": 1.05,
+      "p99": 1.31,
+      "min": 0.44,
+      "max": 1.54
+    },
+    "model_preprocess_ms": {
+      "n": 295,
+      "mean": 1.73,
+      "p50": 1.67,
+      "p95": 2.12,
+      "p99": 2.58,
+      "min": 1.4,
+      "max": 2.79
+    },
+    "proc_ms": {
+      "n": 295,
+      "mean": 51.73,
+      "p50": 51.37,
+      "p95": 56.25,
+      "p99": 60.57,
+      "min": 46.98,
+      "max": 63.99
+    },
+    "read_ms": {
+      "n": 295,
+      "mean": 1.56,
+      "p50": 1.51,
+      "p95": 2.06,
+      "p99": 2.42,
+      "min": 1.06,
+      "max": 2.54
+    },
+    "species_ms": {
+      "n": 295,
+      "mean": 0.06,
+      "p50": 0.06,
+      "p95": 0.1,
+      "p99": 0.12,
+      "min": 0.01,
+      "max": 0.17
+    }
+  },
+  "outputs": {
+    "video": "D:\\作业\\软工\\results\\V1\\yolo11n_1280.mp4",
+    "csv": "D:\\作业\\软工\\results\\V1\\yolo11n_1280_frames.csv",
+    "json": "D:\\作业\\软工\\results\\V1\\yolo11n_1280.json"
+  }
+}

@@ -1,0 +1,18 @@
+# CPU-only, reproducible on an ordinary laptop.
+# torch/torchvision must come from the CPU index:
+#   pip install --index-url https://download.pytorch.org/whl/cpu torch==2.14.1+cpu torchvision==0.29.1+cpu
+torch==2.14.1+cpu
+torchvision==0.29.1+cpu
+ultralytics==8.4.183
+opencv-python==5.0.0
+numpy==2.5.2
+lap==0.5.13
+
+# ---- audio (BirdNET v2.4) ----
+ai-edge-litert==2.3.0      # TFLite runtime; tflite-runtime has no Windows wheels
+soundfile==0.14.0          # wav write / fallback decode
+scipy==1.18.1              # resample_poly
+imageio-ffmpeg==0.6.0      # bundled ffmpeg binary for opus/ogg decode
+
+# BirdNET weights live in models/birdnet/*.tflite. They ship inside the birdnetlib
+# wheel (`pip install birdnetlib`, used only as a download source, never imported).
